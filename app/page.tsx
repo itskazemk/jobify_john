@@ -1,13 +1,12 @@
-import { Button } from "@/components/ui/button";
-import { Camera } from "lucide-react";
+import Logo from "@/assets/logo.svg";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <Button>default button</Button>
-      <Button variant={"outline"}>
-        <Camera />
-      </Button>
-    </div>
+    <main>
+      <header className="max-w-6xl mx-auto px-4 sm:px-8 py-6">
+        <Image src={Logo} alt="logo" />
+      </header>
+    </main>
   );
 }
